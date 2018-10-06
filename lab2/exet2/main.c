@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
 		deam=2*rad;
 		S1=rad*rad*M_PI;	
 		S2=stor*stor;  
-		diagon = sqrt(2)*stor; //аписать формулу диагонали квадрата 
+		diagon = sqrt(2)*stor; //описать формулу диагонали квадрата 
 		if(deam<=stor) printf(" руг поместитьс€ в квадрат,  вадрат в круг нет");	
 		
 		else if(diagon<=deam) printf(" вадарат поместитьс€ в  руг,  руг в квадрат нет");
