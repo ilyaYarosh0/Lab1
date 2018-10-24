@@ -5,7 +5,7 @@
 
 int main(int argc, char *argv[]) {
 	setlocale(LC_ALL,"Russian");
-	int a,b,c;
+	int a,b,c,z,v,sum=0,su=1;
 printf("Найти сумму S и произведение P:\n");
 printf("1) четных чисел от 1 до z\n");
 printf("2) нечетных чисел от 1 до z\n");
@@ -17,12 +17,37 @@ switch (n)
 {
 	case 1:
 		printf("Введите число z\n");
+		scanf("%d",&z);
+	for(v=2;v<=z;v+=2){
+	sum+=v;
+	su=su*v;
+
+}
+	printf("Сумма S= %d\n",sum);
+	printf("Произведение P= %d\n",su);
+		
 break;
 	case 2:
 			printf("Введите число z\n");
+			scanf("%d",&z);
+				for(v=1;v<=z;v++){
+	sum+=v;
+	su=su*v;
+
+}
+	printf("Сумма S= %d\n",sum);
+	printf("Произведение P= %d\n",su);
 break;
 	case 3: 
 		printf("Введите число z\n");
+		scanf("%d",&z);
+			for(v=3;v<=z;v+=3){
+	sum+=v;
+	su=su*v;
+
+}
+	printf("Сумма S= %d\n",sum);
+	printf("Произведение P= %d\n",su);
 break;
 default: printf("Heвернoe значение.");
 }
