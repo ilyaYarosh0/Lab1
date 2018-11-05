@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 #include <locale.h>
-#include <conio.h>
-#include <windows.h>
+
+
 void zamena(char stv[100], int ln1){
 	int j =0; int i; char res[100];
 for (i=0; i<ln1; i++){
@@ -29,7 +29,6 @@ setlocale(LC_ALL,"Russian");
 char str1[100];
 printf("¬ведите строку:");
 gets(str1);
-int lon1=srelen(str1);
+int lon1=strlen(str1);
 zamena(str1,lon1);
 }
-
